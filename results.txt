@@ -1,0 +1,24 @@
+//The Test Cases
+	All Different Numbers: 1,2,3 ---> Should Return "Not an Isoscles Triangle"
+	Three Equal Numbers:   3,3,3 ---> Should Return "Not an Isoscles Triangle"
+        First Two Equal Numbers: 2,2,3 ---> Should Return "This is an Isoscles Triangle"
+        Last Two  Equal Numbers: 1,3,3 ---> Should Return "This is an Isoscles Triangle"
+        First and Last Equal Numbers: 3,1,3 ---> Should Return "This is an Isoscles Triangle"
+        First number less than zero: -1,1,2 ---> Should Return "All arguments must be above 0"
+	Second Number Equal to zero: 1,0,1 ---> Should Return "All arguments must be above 0"
+	Last Number Equal to zero: 1,1,0 ---> Should Return "All arguments must be above 0"	
+
+//The Results of Running the Test Cases and Benchmark Tests
+	Rachaels-MacBook-Air:workspace rachaelhogannew$ go test -bench=.
+	goos: darwin
+	goarch: amd64
+	BenchmarkIsosceles1-4   	2000000000	         1.13 ns/op
+	BenchmarkIsosceles2-4   	2000000000	         0.99 ns/op
+	BenchmarkIsosceles3-4   	2000000000	         1.12 ns/op
+	BenchmarkIsosceles4-4   	2000000000	         0.99 ns/op
+	BenchmarkIsosceles5-4   	2000000000	         1.12 ns/op
+	BenchmarkIsosceles6-4   	2000000000	         0.37 ns/op
+	BenchmarkIsosceles7-4   	2000000000	         0.74 ns/op
+	BenchmarkIsosceles8-4   	2000000000	         0.56 ns/op
+	PASS
+	ok  	_/Users/rachaelhogan_1/workspace	14.806s
